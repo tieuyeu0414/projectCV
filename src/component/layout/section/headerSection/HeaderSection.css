@@ -1,0 +1,26 @@
+#header-section, .list-header__section{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.link-header__section{
+    padding: 10px 15px;
+    display: block;
+    font-size: 18px;
+    color: #6b6b6b;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.link-header__section:hover{
+    background: #F7F7F7;
+}
+.active{
+    font-weight: 700;
+    color: black;
+}

@@ -1,0 +1,141 @@
+.bg-manage__user {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.bg-manage__user p {
+    font-size: 17px;
+    color: #717171;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.main-manage__user {
+    margin-top: 2rem;
+}
+
+.list-manage__user {
+    padding: 0;
+    width: 100%;
+    position: relative;
+
+}
+
+.link-manage__user {
+    display: flex;
+    padding: 10px 0;
+    color: black;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-manage__user {
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.number-post-manage__user {
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.452);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.search-manage__user,
+.btn-link-manage__user {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14);
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.active-manage__user {
+    background: white;
+}
+
+.btn-link-manage__user {
+    color: white;
+    background: #868686;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.btn-link-manage__user:hover {
+    color: white;
+}
+
+.table-manage__user {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+    overflow: hidden;
+}
+
+.row-table-manage__user {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.row-table-manage__user:last-child {
+    border-bottom: none;
+}
+
+.time-manage__user,
+.name-manage__user {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.time-manage__user span {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.like-comment-manage__user,
+.function-manage__user {
+    display: flex;
+    align-items: center;
+}
+
+.width-likeCmt-manage__user {
+    text-align: left;
+    min-width: 150px;
+}
+
+.btn-manage__user {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+    margin-left: 10px;
+}
+
+.nametime-post-manage__user {
+    width: 40%;
+}
+
+.filter-time-manage__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listSelect-manage__user {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+    outline: none;
+}

@@ -1,0 +1,30 @@
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-createVideo {
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    padding: 2rem 8rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.14);
+    background: white;
+}
+
+.btn-create-video {
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.title-createVideo {
+    padding: 8px 10px;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    outline: none;
+    width: 100%;
+}

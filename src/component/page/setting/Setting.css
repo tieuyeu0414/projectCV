@@ -1,0 +1,66 @@
+.link-setting {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.link-setting a {
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+    margin-right: 15px;
+    background: white;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 16px;
+}
+
+.active-setting {
+    border: 2px solid rgba(34, 34, 172, 0.356) !important;
+}
+
+.border-btn-setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.border-btn-setting p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.clear-flex-setting {
+    display: block;
+}
+
+.border-btn-setting-grid {
+    margin-top: 10px;
+}
+
+.border-btn-setting-grid label {
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+.border-btn-setting-grid input,
+.submit-pass-setting {
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+    outline: none;
+    width: 100%;
+
+}
+
+.submit-pass-setting {
+    width: auto;
+    margin-top: 10px;
+}

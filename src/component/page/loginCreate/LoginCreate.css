@@ -1,0 +1,116 @@
+#login {
+    padding: 15px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    background: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login {
+    width: 70%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title-login {
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.text-login {
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+
+.border-or-login {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.border-or {
+    position: relative;
+    font-size: 2rem;
+    padding: 0 20px;
+    background-color: white;
+    z-index: 1;
+}
+
+.border-or-login::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 40%;
+    background: rgba(0, 0, 0, 0.14);
+}
+
+.form-login,
+.box-form__login {
+    text-align: left;
+}
+
+.txt-box__formLogin {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.input-box__formLogin {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+}
+
+.input-box__formLogin[type="submit"] {
+    background: #3B49DF;
+    color: white;
+}
+
+.input-box__formLogin[type="submit"]:hover {
+    background: #323EBE;
+}
+
+.link-register__forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.firebaseui-container,
+.firebaseui-idp-button {
+    max-width: none !important;
+}
+
+.firebaseui-idp-button {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 16px !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(0, 0, 0, 0.14) !important;
+}
+
+.firebaseui-idp-text {
+    font-size: 20px !important;
+    padding-left: 10px !important;
+}
+
+.firebaseui-card-content {
+    padding: 0 !important;
+}

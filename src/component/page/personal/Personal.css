@@ -1,0 +1,175 @@
+.profileContent {
+    flex: 8;
+}
+
+.a {
+    flex: 2;
+}
+
+.profileTop {
+    position: relative;
+    text-align: center;
+}
+
+.profileCoverImg {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.profileCoverImg img,
+.profileAvatarImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileAvatarImg {
+    width: 168px;
+    height: 168px;
+    border-radius: 100%;
+    border: 4px solid #fff;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profileUserInfo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.profileUsername {
+    font-weight: 700;
+    font-size: 32;
+    margin-bottom: 0;
+}
+
+.profileUserDesc {
+    font-size: 17px;
+    color: #65676b;
+    /* line-height: 20px; */
+}
+
+
+
+.profileCenterContent {
+    display: flex;
+}
+
+.profileCenterIntro {
+    flex: 4;
+    /* overflow-y: scroll; */
+    position: sticky;
+    top: 70px;
+}
+
+.profileCenterFeed {
+    flex: 8;
+}
+
+.profileIntroTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profileIntroList {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.profileIntroItem {
+    padding: 8px 0;
+}
+
+.profileIntroIcon {
+    margin-right: 5px;
+}
+
+.profileIntroDes {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.profileImageImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileImageItem {
+    padding: 3px 3px !important;
+    height: 100px;
+}
+
+.ab-btn-cover__img {
+    position: absolute;
+    background-color: white;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ab-btn-cover__img span {
+    color: black;
+    font-weight: 500;
+}
+
+.ab-btn-cover__img input,
+.bg-file-change-avt input {
+    position: absolute;
+    right: 0%;
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0;
+}
+
+.bg-file-change-avt {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-file-change-avt i {
+    font-size: 2rem;
+    color: rgb(238, 238, 238);
+}
+
+.bg-file-change-avt input {
+    font-size: 10rem;
+}
+
+.profileAvatarImg:hover .bg-file-change-avt {
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.link-profileIntroDes{
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: white;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+    padding: 8px 12px;
+    color: black;
+    border-radius: 10px;
+}

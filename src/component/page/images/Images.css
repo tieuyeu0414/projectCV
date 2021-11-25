@@ -1,0 +1,69 @@
+#images {
+    padding: 2rem 0;
+}
+
+.box-imgaes {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+}
+
+.avatar-photo {
+    position: absolute;
+    bottom: 0;
+    padding: 8px 5px;
+    display: none;
+    opacity: 0;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.877));
+
+}
+
+.box-imgaes:hover .avatar-photo {
+    display: flex;
+    animation: showAvatar 0.2s forwards ease-in;
+}
+
+@keyframes showAvatar {
+    from {
+        display: none;
+        opacity: 0;
+    }
+
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.img-box__images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#fiter-images,
+#fiter-images option {
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    outline: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.img-avatar__images {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.name-img__avatar-images h6 {
+    margin: 0;
+    font-size: 12px;
+    padding: 5px;
+    color: white;
+}

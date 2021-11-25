@@ -1,0 +1,54 @@
+#contact {
+    padding: 3rem 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    background: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+}
+
+.item-live__contact {
+    list-style: disc;
+}
+
+.txt-contact {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.set-contact {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+.set-contact[type="submit"] {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.set-contact[type="submit"]:hover {
+    background: #1d1d1d;
+}
+
+.live-contact {
+    border-right: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.padding-contact {
+    padding: 0 25px;
+}
+
+@media screen and (max-width: 1023px) {
+    .padding-contact {
+        padding: 0;
+    }
+
+    .live-contact {
+        border: none;
+    }
+}

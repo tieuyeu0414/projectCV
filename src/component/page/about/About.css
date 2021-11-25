@@ -1,0 +1,27 @@
+#about{
+    padding: 3rem 6rem;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    background: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+}
+
+.txt-detail__about{
+    line-height: 2.2;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+.img-detail__about{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.icon-detail__about{
+    margin-right: 5px;
+}
+.icon-detail__about:last-child{
+    margin-left: 5px;
+}
+
