@@ -104,7 +104,7 @@ export default class ArticleSection extends Component {
                                     <i className={`${filterSetLike} fa fa-heart-o icon-function-post`}></i>
                                     <p className="txt-function__post">{item.like} like</p>
                                 </div>
-                                <Link to={`/chi-tiet/${item.id}/${this.ChangeToSlug(item.title)}`} 
+                                <Link to={`/chi-tiet/${item.id}/${this.ChangeToSlug(item.title)}`}  
                                 className="comment-post function-hover">
                                     <i className="fa fa-comment-o  icon-function-post"></i>
                                     <p className="txt-function__post">{item.comment} comment</p>

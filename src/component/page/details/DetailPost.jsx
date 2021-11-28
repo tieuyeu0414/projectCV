@@ -166,7 +166,9 @@ export default class DetailPost extends Component {
                                                             <div className="title-comment-detail__post">
                                                                 <h3>Bình luận</h3>
                                                             </div>
-                                                            <div className="box-comment-detail__post d-flex">
+                                                            {
+                                                                isSignedIn &&
+                                                                <div className="box-comment-detail__post d-flex">
                                                                 {
                                                                     user.map(itemUser=>{
                                                                         if(itemUser.uid === firebase.auth().currentUser.uid){
@@ -195,6 +197,7 @@ export default class DetailPost extends Component {
                                                                     </div>
                                                                 </form>
                                                             </div>
+                                                            }
                                                             
                                                             {
                                                                 comment.map(item=>{

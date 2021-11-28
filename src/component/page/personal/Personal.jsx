@@ -62,6 +62,7 @@ export default class Personal extends Component {
                                         <div className="profileCoverImg">
                                             <img src={item.coverImg} alt=""  />
                                             {
+                                                isSignedIn &&
                                                 item.uid === firebase.auth().currentUser.uid ?
                                                 <button className="ab-btn-cover__img">
                                                     <span><i className="fa fa-camera"></i> Thay đổi ảnh bìa</span>
@@ -73,12 +74,13 @@ export default class Personal extends Component {
                                         <div className="profileAvatarImg">
                                             <img src={item.photo} alt="" />
                                             {
-                                                item.uid === firebase.auth().currentUser.uid ?
-                                                <div className="bg-file-change-avt">
-                                                    <i className="fa fa-camera"></i>
-                                                    <input name="avatar" type="file" onChange={(e)=>this.handleChangeImgProfile(e, item.id)}/>
-                                                </div>
-                                                : ''
+                                               isSignedIn &&  
+                                               item.uid === firebase.auth().currentUser.uid ?
+                                               <div className="bg-file-change-avt">
+                                                   <i className="fa fa-camera"></i>
+                                                   <input name="avatar" type="file" onChange={(e)=>this.handleChangeImgProfile(e, item.id)}/>
+                                               </div>
+                                               : ''
                                             }
                                         </div>      
                                     </div>
@@ -143,9 +145,14 @@ export default class Personal extends Component {
                                                             </li>
                                                             : ''
                                                         }  
-                                                    <li className="profileIntroItem">
-                                                        <Link className="profileIntroDes link-profileIntroDes" to="/setting/info-setting">Cập nhật thông tin</Link>
-                                                    </li>
+                                                    {
+                                                        isSignedIn &&
+                                                        item.uid === firebase.auth().currentUser.uid ?
+                                                        <li className="profileIntroItem">
+                                                            <Link className="profileIntroDes link-profileIntroDes" to="/setting/info-setting">Cập nhật thông tin</Link>
+                                                        </li>
+                                                        : ''     
+                                                    }
                                                 </ul>
                                             </div>
                                             <div className="profileCenterFeed">
