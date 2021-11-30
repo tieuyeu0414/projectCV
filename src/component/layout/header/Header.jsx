@@ -131,7 +131,7 @@ export default class Header extends Component {
                                 </div>
                                 <div className="logo">
                                     <Link to="/" onClick={this.clearLocalStorage}>
-                                        <img className="img-logo" src="./nature_free-file.png" alt="logo" />
+                                        <img className="img-logo" src="/nature_free-file.png" alt="logo" />
                                     </Link>
                                 </div>
                                 {
