@@ -131,7 +131,7 @@ export default class Header extends Component {
                                 </div>
                                 <div className="logo">
                                     <Link to="/" onClick={this.clearLocalStorage}>
-                                        <img className="img-logo" src="/nature_free-file.png" alt="logo" />
+                                        <img className="img-logo" src="https://firebasestorage.googleapis.com/v0/b/projectcv-f85e2.appspot.com/o/nature_free-file.png?alt=media&token=984a2f4b-821a-49bd-ae19-bc2de6c035e9" alt="logo" />
                                     </Link>
                                 </div>
                                 {
