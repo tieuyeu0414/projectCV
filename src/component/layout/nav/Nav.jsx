@@ -4,9 +4,20 @@ import './Nav.css';
 
 export default class Nav extends Component {
     render() {
+        const {show767px} = this.props;
         return (
             <nav>
                 <div id="nav">
+                    
+                    {
+                        show767px &&
+                        <div className="title-logo">
+                            <h3>nature</h3>
+                            <button className="crayons-btn" onClick={this.props.closeShow}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="asvul0jgsofc9qcsswf21d0qyr5yjkkh" className="crayons-icon"><title id="asvul0jgsofc9qcsswf21d0qyr5yjkkh">Close</title><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636l4.95 4.95z"></path></svg>
+                            </button>
+                        </div>
+                    }
                     <ul id="list-nav">
                         <li className="item-nav" title="Trang chủ">
                             <Link to="/" className="link-nav">
@@ -52,7 +63,7 @@ export default class Nav extends Component {
                     </div>
                 </div>  
                 <div id="img-nav">
-                    <img className="img-nav" src="https://gamenoob.net/wp-content/uploads/2021/02/Gai-xinh-tha-nhe-chiec-anh-tam-hon-full-HD.jpg" alt="photos" />
+                    <img className="img-nav" src="https://dean2020.edu.vn/wp-content/uploads/2019/03/anh-thien-nhien-dep-3.jpeg" alt="photos" />
                 </div>             
             </nav>
         )

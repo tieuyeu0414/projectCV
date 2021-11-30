@@ -15,8 +15,8 @@ export default class LoginCreate extends Component {
                 <div id="login">
                     <div className="login">
                         <div className="title-login">
-                            <h4 className="txt-title__login">Chào mừng đến với cộng đồng Beautiful</h4>
-                            <p className="text-login">Đến với <Link to="/">Beautiful</Link> bạn sẽ được chiêm ngưỡng vẻ đẹp của các hot girl</p>
+                            <h4 className="txt-title__login">Chào mừng đến với cộng đồng Nature</h4>
+                            <p className="text-login">Đến với <Link to="/">Nature</Link> bạn sẽ được chiêm ngưỡng vẻ đẹp của thiên nhiên hùng vĩ</p>
                         </div>
                         <div className="login-internet">
                         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />

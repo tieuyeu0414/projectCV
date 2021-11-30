@@ -168,3 +168,11 @@
     object-fit: cover;
     border-radius: 100%;
 }
+
+.header-display-none{
+    display: none;
+}
+.open-show{
+    margin-right: 10px;
+    display: none;
+}

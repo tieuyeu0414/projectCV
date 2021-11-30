@@ -91,7 +91,7 @@ export default class DetailPost extends Component {
             <div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-1 d-flex justify-content-center">
+                        <div className="col-md-1 d-flex justify-content">
                             {
                                 post.map(item=>{
                                     if(item.id === id){
@@ -108,7 +108,7 @@ export default class DetailPost extends Component {
                                 })
                             }
                         </div>
-                        <div className="col-md-8">
+                        <div className="col-lg-8 col-md-11">
                             {
                                 post.map(item=>{
                                     if(item.id === id){
@@ -125,7 +125,7 @@ export default class DetailPost extends Component {
                                                             <video src={item.video} controls width="100%" height="100%"></video>
                                                         </div> : ''
                                                     }
-                                                    <div style={{padding: '2rem 4rem'}}>
+                                                    <div className="padding-24">
                                                         {
                                                             user.map(itemUser=>{
                                                                 if(itemUser.uid === item.idUser){
@@ -162,7 +162,7 @@ export default class DetailPost extends Component {
                                                 </div>
                                                 <div className="bg-detail__post">
                                                     <div className="comment-detail__post">
-                                                        <div style={{padding: '2rem 4rem'}}>
+                                                        <div className="padding-24">
                                                             <div className="title-comment-detail__post">
                                                                 <h3>Bình luận</h3>
                                                             </div>
@@ -260,7 +260,7 @@ export default class DetailPost extends Component {
                                 })
                             }
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3">
                             <div style={{padding: '10px 0'}}>
                                 <div id="introduce-user">
                                     {

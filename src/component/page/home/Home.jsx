@@ -12,14 +12,14 @@ export default class Home extends Component {
             <div className="container-fluid">
                 <div id="home">
                     <div className="row">
-                        <div className="col-md-3">
-                            <Nav/>
+                        <div className="col-lg-3 col-md-4 display-nav">
+                            <Nav show767px={false}/>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-lg-6 col-md-8">
                             <Section post={post} tagPost={tagPost} tag={tag} user={user} onFilterTime={onFilterTime}
                             filterTime={filterTime} onClickLike={onClickLike} dataSetLike={dataSetLike} isSignedIn={isSignedIn} />
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3 display_aside">
                             <Aside post={post} />
                         </div>
                     </div>

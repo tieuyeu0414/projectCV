@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import firebase from 'firebase';
+import Nav from '../nav/Nav';
 
 export default class Header extends Component {
     constructor(props){
@@ -9,7 +10,9 @@ export default class Header extends Component {
         this.state = {
             isShowMyself: false,
             keySearch: '',
-            isSearch: false
+            isSearch: false,
+            show767px: false,
+            isOpenSearch: false
         }
     }
     onClickAvatar = () =>{
@@ -44,8 +47,65 @@ export default class Header extends Component {
         localStorage.removeItem('index');
         localStorage.removeItem('setting');
     }
+    displayNav = () =>{
+        let show = document.querySelector('.header-display-none');
+        show.classList.add('show-display-nav');
+        let showOpacity = document.querySelector('.bg-opacity');
+        showOpacity.classList.add('bg-opacity-show');
+        this.setState({
+            show767px: true
+        })
+
+    }
+    closeShow = () =>{
+        let show = document.querySelector('.header-display-none');
+        show.classList.remove('show-display-nav');
+        let showOpacity = document.querySelector('.bg-opacity');
+        showOpacity.classList.remove('bg-opacity-show');
+        this.setState({
+            show767px: false
+        })
+    }
+    componentDidMount(){
+        if(window.innerWidth < 768){
+            this.setState({
+                isOpenSearch: true,
+            })
+        }
+        else{
+            let show = document.querySelector('.header-display-none');
+            show.classList.remove('show-display-nav');
+            let showOpacity = document.querySelector('.bg-opacity');
+            showOpacity.classList.remove('bg-opacity-show');
+            this.setState({
+                isOpenSearch: false,
+                show767px: false
+            })
+        }
+        window.addEventListener('resize', ()=>{
+            if(window.innerWidth < 768){
+                this.setState({
+                    isOpenSearch: true,
+                })
+            }
+            else{
+                let show = document.querySelector('.header-display-none');
+                show.classList.remove('show-display-nav');
+                let showOpacity = document.querySelector('.bg-opacity');
+                showOpacity.classList.remove('bg-opacity-show');
+                this.setState({
+                    isOpenSearch: false,
+                    show767px: false
+                })
+            }
+        })
+    }
+    showSearch = () =>{
+        let search = document.querySelector('.search');
+        search.classList.toggle('show-search');
+    }
     render() {
-        const {isShowMyself, keySearch, isSearch} = this.state;
+        const {isShowMyself, keySearch, isSearch, show767px, isOpenSearch} = this.state;
         const {isSignedIn, user} = this.props;
         if(isSignedIn){
             var filterUser = user.filter(item=>item.uid === firebase.auth().currentUser.uid ? item : false);
@@ -59,11 +119,25 @@ export default class Header extends Component {
                     <div className="container-fluid">
                         <div className="header">
                             <div id="logo-search">
+                                <div className="btn-nav">
+                                    <button className="crayons-btn open-show" onClick={this.displayNav}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a29sc7ukaqxu61ebwifvrgyry4vb2uk6" className="crayons-icon"><title id="a29sc7ukaqxu61ebwifvrgyry4vb2uk6">Navigation menu</title>
+                                        <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+                                    </svg>
+                                    </button>
+                                    <div className="header-display-none">
+                                        <Nav show767px={show767px} closeShow={this.closeShow}/>
+                                    </div>
+                                </div>
                                 <div className="logo">
                                     <Link to="/" onClick={this.clearLocalStorage}>
-                                        <img className="img-logo" src="https://i.pinimg.com/236x/4b/36/b8/4b36b8138c3b70f7c6ab97c2019878a1.jpg" alt="logo" />
+                                        <img className="img-logo" src="nature_free-file.png" alt="logo" />
                                     </Link>
                                 </div>
+                                {
+                                    isOpenSearch && 
+                                    <i className="fa fa-search" onClick={this.showSearch}></i>
+                                }
                                 <div className="search">
                                     <input type="text" placeholder="Tìm kiếm..." className="input-search" value={keySearch} onChange={this.onChangeSearch}/>
                                     <i className="fa fa-search icon-search"></i>
@@ -125,6 +199,9 @@ export default class Header extends Component {
                                                         <br />
                                                         <span>{filterUser.map(item=>item.email)}</span>
                                                     </Link>
+                                                </li>
+                                                <li className="item-function">
+                                                    <Link className="txt-function" to="/create-post">Tạo bài viết</Link> 
                                                 </li>
                                                 <li className="item-function">
                                                     <Link className="txt-function" to="/setting">Cài đặt</Link>

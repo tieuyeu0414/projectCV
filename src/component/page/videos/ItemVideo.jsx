@@ -32,7 +32,7 @@ export default class ItemVideo extends Component {
     render() {
         const {item, user} = this.props;
         return (
-            <div className="col-md-4 mb-4">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div className="box-videos">
                     <Link to={`/chi-tiet/${item.id}/${this.ChangeToSlug(item.title)}`} className="link-video">
                         <video className="video-detail" src={item.video} />

@@ -1,8 +1,259 @@
-@media screen and(max-width: 1023px){
-  .padding-contact{
-      padding: 0;     
+@media screen and (max-width: 1439px) {
+
+  .link-nav,
+  .link-header__section,
+  .link-top10,
+  .link-manage__user {
+    font-size: 16px !important;
   }
-  .live-contact{
-      border: none;
+
+  .link-nav {
+    padding: 8px 0 !important;
+  }
+
+  .link-header__section {
+    padding: 8px 10px !important;
+  }
+
+  .img-avatar {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .img-article__section {
+    height: 200px !important;
+  }
+
+  .name-user,
+  .txt-function__post,
+  .bg-manage__user p {
+    font-size: 14.5px !important;
+  }
+
+  .txt-title {
+    font-size: 1.3rem !important;
+  }
+
+  .function-hover {
+    margin-right: 10px !important;
+    padding: 5px 0 !important;
+  }
+
+  .content-article__section {
+    padding: 8px 10px !important;
+  }
+
+  .txt-title__aside,
+  .title-search h3 {
+    font-size: 20px !important;
+  }
+
+  .video-detai {
+    height: 150px !important;
+  }
+
+  .review-video {
+    padding: 8px !important;
+  }
+
+  .box-tags,
+  .bg-manage__user {
+    padding: 10px !important;
+  }
+
+  .bg-detail__post h1 {
+    font-size: 2rem;
+  }
+
+  .profileAvatarImg {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .input-title-create__post {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .padding-contact {
+    padding: 0;
+  }
+
+  .live-contact {
+    border: none;
+  }
+
+  .display_aside {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .open-show {
+    display: block !important;
+  }
+
+  .row {
+    --bs-gutter-x: 0 !important;
+  }
+
+  #about,
+  #contact {
+    padding: 10px 8px !important;
+  }
+
+  .search,
+  .create-post,
+  #img-nav,
+  .display-nav {
+    display: none !important;
+  }
+
+  .row-table-manage__user {
+    display: block !important;
+  }
+
+  .nametime-post-manage__user {
+    width: 100% !important;
+  }
+
+  .btn-manage__user:first-child {
+    margin: 0 !important;
+  }
+
+  .profileCoverImg,
+  .photo-detail__post {
+    height: 200px !important;
+  }
+
+  .profileAvatarImg {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .ab-btn-cover__img {
+    bottom: unset !important;
+    top: 10px;
+    padding: 5px !important;
+  }
+
+  .ab-btn-cover__img span {
+    display: none;
+  }
+
+  .img-create__post {
+    height: 120px !important;
+    width: 120px !important;
+  }
+
+  .padding-24 {
+    padding: 10px 8px !important;
+  }
+
+  .bg-detail__post h1,
+  .input-title-create__post {
+    font-size: 1.5rem !important;
+  }
+
+  #section {
+    padding: 0 !important;
+  }
+
+  .link-like {
+    font-size: 20px !important;
+  }
+
+  .justify-content {
+    justify-content: left !important;
+  }
+
+  .submit-create__post {
+    width: 120px !important;
+    padding: 5px 8px !important;
+    font-size: 16px !important;
+  }
+
+  .show-display-nav {
+    display: block !important;
+    position: fixed;
+    background: white;
+    width: 80% !important;
+    height: 100%;
+    overflow: scroll;
+    z-index: 10000000;
+    left: 0;
+    top: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+  }
+
+  .title-logo {
+    height: 60px;
+  }
+
+  .title-logo h3 {
+    margin: 0;
+  }
+
+  .title-logo,
+  #list-nav,
+  #social__internet-nav {
+    padding: 2px 10px !important;
+  }
+
+  .bg-opacity-show {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 100%;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin: auto;
+  }
+  .link-create, .link-login{
+    font-size: 14px !important;
+    padding: 5px 8px !important;
+    margin-left: 6px !important;
+  }
+  .login {
+width: 100% !important;
+}
+.txt-box__formLogin{
+  font-size: 16px !important;
+}
+.input-box__formLogin {
+  margin-bottom: 12px !important;
+  padding: 8px !important;
+  font-size: 16px !important;
+}
+.show-search{
+  display: block !important;
+  position: absolute !important;
+  top: 100%;
+z-index: 1000;
+background: white;
+width: auto !important;
+height: auto!important;
+}
+}
+
+@media screen and (max-width: 374px) {
+  .list-header__section {
+
+    flex-flow: row wrap;
+  }
+
+  .title-tags,
+  .link-setting,
+  .link-itme-setting {
+    display: block !important;
+  }
+
+  .link-itme-setting {
+    margin-bottom: 5px;
   }
 }

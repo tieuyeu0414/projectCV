@@ -9,10 +9,10 @@ export default class Footer extends Component {
                 <div className="container-fluid-footer">
                     <div className="text-center">
                         <h6>Giới thiệu</h6>
-                        <p className="text-justify">Beautiful là trang web dành cho các thanh niên chưa vợ, chưa người yêu.</p>
-                        <p>Trang web tập hợp các bài viết hình ảnh, video về các cô gái hot girl sexy, nóng bỏng và quyến rũ.</p>
+                        <p className="text-justify">Nature là trang web về thiên nhiên, phong cảnh.</p>
+                        <p>Trang web tập hợp các bài viết hình ảnh, video về những nơi đẹp lung linh và rất chill.</p>
                         <p>Người dùng có thể xem các bài viết, tương tác và đăng bài lên trang web để mọi người cùng xem.</p>
-                        <p>Chúc mọi người bổ mắt - tăng tuổi thọ - sung mãn.</p>
+                        <p>Chúc mọi người thỏa mãn.</p>
                     </div>
                 </div>
                 <div className="container-fluid">
@@ -20,7 +20,7 @@ export default class Footer extends Component {
                     <div className="row d-flex align-items-center">
                         <div className="col-md-8 col-sm-6 col-xs-12">
                             <p className="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-                                <Link to="#"> Beautiful</Link>.
+                                <Link to="#"> Nature</Link>.
                             </p>
                         </div>
 

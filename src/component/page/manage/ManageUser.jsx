@@ -101,25 +101,25 @@ export default class ManageUser extends Component {
                     </div>
                     <div className="number-like-comment-manage">
                         <div className="row">
-                            <div className="col-md-3">
+                            <div className="col-lg-3 col-md-6 mb-2">
                                 <div className="bg-manage__user">
                                     <h4>{sumLike}</h4>
                                     <p>Số lượng like</p>
                                 </div>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-lg-3 col-md-6 6 mb-2">
                                 <div className="bg-manage__user">
                                     <h4>{sumCmt}</h4>
                                     <p>Số lượng comment</p>
                                 </div>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-lg-3 col-md-6 6 mb-2">
                                 <div className="bg-manage__user">
                                     <h4>{filterLike500.length}</h4>
                                     <p>Số lượng like &#62;500</p>
                                 </div>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-lg-3 col-md-6 6 mb-2">
                                 <div className="bg-manage__user">
                                     <h4>{filterCmt500.length}</h4>
                                     <p>Số lượng comment &#62;500</p>

@@ -84,7 +84,9 @@ strong {
     border-radius: 10px;
     width: 100%;
 }
-
+.form-comment-detail__post p{
+    margin: 0;
+}
 .form-comment-detail__post textarea {
     border: none;
     outline: none;
@@ -97,7 +99,9 @@ strong {
     padding: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.14);
 }
-
+.border-box-comment-detail__post input{
+    width: 100%;
+}
 .submit-comment {
     width: 100px;
     padding: 5px;
@@ -143,11 +147,18 @@ strong {
 
 .like-post-fixed {
     position: fixed;
-    padding: 10px 0;
+    margin-top: 10px;
     text-align: center;
     cursor: pointer;
+    z-index: 100;
+    background: white;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.14);
 }
-
+.like-post-fixed p{
+    margin: 0;
+}
 .link-like {
     color: black;
     font-size: 2rem;
@@ -179,4 +190,10 @@ strong {
 .link-tag-detail_tag:hover {
     background: rgba(0, 0, 0, 0.03);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.14);
+}
+.padding-24{
+    padding: 2rem 4rem;
+}
+.justify-content{
+    justify-content: center;
 }

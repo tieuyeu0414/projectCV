@@ -37,7 +37,7 @@ export default class Search extends Component {
             <div className="pt-5 pb-5">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-3 ">
+                        <div className="col-md-4 ">
                             <div className="article-section">
                                 <div className="content-article__section">
                                     <div className="title-search">
@@ -63,7 +63,7 @@ export default class Search extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-8">
                             <Route path={match.path} component={() => <SearchAll tag={tag} post={post} user={user} tagPost={tagPost} 
                             isSignedIn={isSignedIn} dataSetLike={dataSetLike} onClickLike={this.props.onClickLike} 
                             keySearch={key}/>} exact/>    

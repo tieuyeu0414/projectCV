@@ -86,8 +86,8 @@
 }
 
 .img-create__post {
-    height: 200px !important;
-    width: 200px !important;
+    height: 200px;
+    width: 200px;
 }
 
 .btn-delete-img-create__post{

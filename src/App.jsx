@@ -483,6 +483,7 @@ export default class App extends Component {
         <Router>
           {continuePost ? <Redirect to="/login-create/login"/> : ''}
           <ScrollTop>
+            <div className="bg-opacity"></div>
             <Header isSignedIn={isSignedIn} user={user}/>
             <RouterLink post={post} tag={tag} user={user} onFilterTime={this.onFilterTime} tagPost={tagPost}
               filterTime={filterTime} uiConfig={uiConfig} isSignedIn={isSignedIn} onSubmitSignIn={this.onSubmitSignIn}
@@ -490,6 +491,7 @@ export default class App extends Component {
               dataSetLike={dataSetLike} onSubmitCmt={this.onSubmitCmt} comment={comment} onDelete={this.onDelete} onEdit={this.onEdit}
               newdata={newdata} photo={photo} image={image} dataVideo={dataVideo}/>
             <Footer />
+            
           </ScrollTop>
         </Router>
       //     {/* <button onClick={this.themeToggler}>Change Theme</button>

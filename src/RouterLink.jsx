@@ -15,7 +15,7 @@ import Setting from './component/page/setting/Setting';
 import CreateVideo from './component/page/createVideo/CreateVideo';
 import DetailTag from './component/page/detailTag/DetailTag';
 import Search from './component/page/search/Search';
-import Admin from './component/admin/Admin';
+// import Admin from './component/admin/Admin';
 
 export default class RouterLink extends Component {
     render() {
@@ -51,7 +51,7 @@ export default class RouterLink extends Component {
                 <Route path="/search/:key" component={(props) => <Search tag={tag} post={post} user={user} tagPost={tagPost} 
                 isSignedIn={isSignedIn} dataSetLike={dataSetLike} onClickLike={this.props.onClickLike} 
                 {...props} />}/>
-                <Route path="/admin" component={Admin}/>
+                {/* <Route path="/admin" component={Admin}/> */}
                 {
                     !isSignedIn 
                     ?<Route path="/login-create" 

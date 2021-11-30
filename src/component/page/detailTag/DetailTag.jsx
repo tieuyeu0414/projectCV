@@ -39,7 +39,7 @@ export default class DetailTag extends Component {
                     tag.map(item=>item.id === id ?
                         <div className="container-fluid" key={item.id}>
                             <div className="row">
-                                <div className="col-md-3 ">
+                                <div className="col-lg-3">
                                     <div className="article-section">
                                         <div className="content-article__section">
                                             <h3>Giới thiệu</h3>
@@ -49,7 +49,7 @@ export default class DetailTag extends Component {
                                     </div>
                                     
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-lg-6 col-md-8">
                                     <h3>Danh sách</h3>
                                     <ul style={{padding: '0'}}>
                                         {
@@ -63,7 +63,7 @@ export default class DetailTag extends Component {
                                         
                                     </ul>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-lg-3 col-md-4">
                                     <div className="new__post-aside">
                                         <div className="title-new">
                                             <h4 className="txt-title__aside">Các nhãn dán</h4>

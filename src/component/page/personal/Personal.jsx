@@ -65,7 +65,7 @@ export default class Personal extends Component {
                                                 isSignedIn &&
                                                 item.uid === firebase.auth().currentUser.uid ?
                                                 <button className="ab-btn-cover__img">
-                                                    <span><i className="fa fa-camera"></i> Thay đổi ảnh bìa</span>
+                                                    <i className="fa fa-camera"></i><span style={{marginLeft: '5px'}}> Thay đổi ảnh bìa</span>
                                                     <input name="coverImg" type="file" onChange={(e)=>this.handleChangeImgProfile(e, item.id)} />
                                                 </button>
                                                 : ''
@@ -96,75 +96,75 @@ export default class Personal extends Component {
 
                                     <div className="profileCenter">
                                         <hr className="profileHr" />
-                                        <div className="profileCenterContent">
-                                            <div className="profileCenterIntro">
-                                                <span className="profileIntroTitle">Giới thiệu</span>
-                                                <ul className="profileIntroList">
+                                            <div className="row">
+                                                <div className="col-md-4 mb-2">
+                                                    <span className="profileIntroTitle">Giới thiệu</span>
+                                                    <ul className="profileIntroList">
+                                                            {
+                                                                item.workplace !== '' ? 
+                                                                <li className="profileIntroItem">
+                                                                    <span className="profileIntroDes">
+                                                                        Làm việc tại {item.workplace}
+                                                                    </span>
+                                                                </li>
+                                                                : ''
+                                                            } 
+                                                            {
+                                                                item.phone !== '' ? 
+                                                                <li className="profileIntroItem">
+                                                                    <span className="profileIntroDes">
+                                                                        Số điện thoại: {item.phone}
+                                                                    </span>
+                                                                </li>
+                                                                : ''
+                                                            }        
+                                                            {
+                                                                item.address !== '' ? 
+                                                                <li className="profileIntroItem">
+                                                                    <span className="profileIntroDes">
+                                                                        Sống tại {item.address}
+                                                                    </span>
+                                                                </li>
+                                                                : ''
+                                                            }  
+                                                            {
+                                                                item.work !== '' ? 
+                                                                <li className="profileIntroItem">
+                                                                    <span className="profileIntroDes">
+                                                                        Công việc hiện tại: {item.work}
+                                                                    </span>
+                                                                </li>
+                                                                : ''
+                                                            }  
+                                                            {
+                                                                item.favorite !== '' ? 
+                                                                <li className="profileIntroItem">
+                                                                    <span className="profileIntroDes">
+                                                                        Sở thích: {item.favorite}
+                                                                    </span>
+                                                                </li>
+                                                                : ''
+                                                            }  
                                                         {
-                                                            item.workplace !== '' ? 
+                                                            isSignedIn &&
+                                                            item.uid === firebase.auth().currentUser.uid ?
                                                             <li className="profileIntroItem">
-                                                                <span className="profileIntroDes">
-                                                                    Làm việc tại {item.workplace}
-                                                                </span>
+                                                                <Link className="profileIntroDes link-profileIntroDes" to="/setting/info-setting">Cập nhật thông tin</Link>
                                                             </li>
-                                                            : ''
-                                                        } 
-                                                        {
-                                                            item.phone !== '' ? 
-                                                            <li className="profileIntroItem">
-                                                                <span className="profileIntroDes">
-                                                                    Số điện thoại: {item.phone}
-                                                                </span>
-                                                            </li>
-                                                            : ''
-                                                        }        
-                                                        {
-                                                            item.address !== '' ? 
-                                                            <li className="profileIntroItem">
-                                                                <span className="profileIntroDes">
-                                                                    Sống tại {item.address}
-                                                                </span>
-                                                            </li>
-                                                            : ''
-                                                        }  
-                                                        {
-                                                            item.work !== '' ? 
-                                                            <li className="profileIntroItem">
-                                                                <span className="profileIntroDes">
-                                                                    Công việc hiện tại: {item.work}
-                                                                </span>
-                                                            </li>
-                                                            : ''
-                                                        }  
-                                                        {
-                                                            item.favorite !== '' ? 
-                                                            <li className="profileIntroItem">
-                                                                <span className="profileIntroDes">
-                                                                    Sở thích: {item.favorite}
-                                                                </span>
-                                                            </li>
-                                                            : ''
-                                                        }  
+                                                            : ''     
+                                                        }
+                                                    </ul>
+                                                </div>
+                                                <div className="col-md-8">
                                                     {
-                                                        isSignedIn &&
-                                                        item.uid === firebase.auth().currentUser.uid ?
-                                                        <li className="profileIntroItem">
-                                                            <Link className="profileIntroDes link-profileIntroDes" to="/setting/info-setting">Cập nhật thông tin</Link>
-                                                        </li>
-                                                        : ''     
+                                                        post.map((itemPost, index)=>
+                                                            itemPost.idUser === item.uid ?
+                                                            <ArticleSection item={itemPost} key={index} tag={tag} user={user} tagPost={tagPost}
+                                                                onClickLike={onClickLike} dataSetLike={dataSetLike} isSignedIn={isSignedIn} />
+                                                            : ''
+                                                        )
                                                     }
-                                                </ul>
-                                            </div>
-                                            <div className="profileCenterFeed">
-                                                {
-                                                    post.map((itemPost, index)=>
-                                                        itemPost.idUser === item.uid ?
-                                                        <ArticleSection item={itemPost} key={index} tag={tag} user={user} tagPost={tagPost}
-                                                            onClickLike={onClickLike} dataSetLike={dataSetLike} isSignedIn={isSignedIn} />
-                                                        : ''
-                                                    )
-                                                }
-                                            </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>

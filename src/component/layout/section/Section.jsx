@@ -2,29 +2,35 @@ import React, { Component } from 'react';
 import HeaderSection from './headerSection/HeaderSection';
 import ArticleSection from './articleSection/ArticleSection';
 import './Section.css';
-import Loading from '../../page/loading/Loading';
+// import Loading from '../../page/loading/Loading';
 
 export default class Section extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            loading: null
-        }
-    }
-    componentDidMount(){
-        // const {desc, photo, date, userId, dataPost} = this.state
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         loading: null
+    //     }
+    // }
+    // componentDidMount(){
+    //     // const {desc, photo, date, userId, dataPost} = this.state
         
-        setTimeout(()=>{
-            const post = this.props.post;
-            this.setState({
-                loading:post,
-            })
-        }, 2000)
+    //     setTimeout(()=>{
+    //         const post = this.props.post;
+    //         this.setState({
+    //             loading:post,
+    //         })
+    //     }, 2000)
             
-        }
+    // }
+    // componentWillUnmount() {
+    //     // fix Warning: Can't perform a React state update on an unmounted component
+    //     this.setState = (state,callback)=>{
+    //         return;
+    //     };
+    // }
     render() {
         let {post, tag, user, onFilterTime, filterTime, tagPost, onClickLike, dataSetLike, isSignedIn} = this.props;
-        const {loading} = this.state;
+        // const {loading} = this.state;
         const time = new Date();
         const date = time.getDate();
         const month = time.getMonth() + 1;
@@ -61,7 +67,7 @@ export default class Section extends Component {
                 <div id="section">
                     <HeaderSection onFilterTime={onFilterTime}/>
                     {
-                        loading && (
+                        // loading && (
                             post.map((itemPost, index)=>{
                                 return !itemPost.video ?
                                 <ArticleSection item={itemPost} key={index} tag={tag} user={user} tagPost={tagPost}
@@ -69,9 +75,9 @@ export default class Section extends Component {
                                 : false
     
                             })
-                        )
+                        // )
                     }
-                    {!loading && <Loading/>}
+                    {/* {!loading && <Loading/>} */}
                 </div>
             </section>
         )
